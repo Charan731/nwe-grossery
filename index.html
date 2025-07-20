@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>grocery</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo img {
+  height: 110px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e60000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: white;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.dropdown-content p {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+nav li:hover .dropdown-content {
+  display: block;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #444;
+}
+
+.hero img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #212020;
+  font-size: 14px;
+  color: #666;
+}</style> 
+   <link rel="icon" type="image/png" href="ra.jpeg">
+  
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="ra.jpeg" alt="Company Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="location.reload()">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="#">Our Services ▾</a>
+            <div class="dropdown-content">
+              <p><strong><a href="engStaff.html">Engineering Staffing Solutions:</a></strong></p>
+              <p><strong><a href="projMang.html">Project Management & Consulting:</a></strong></p>
+              <p><strong><a href="techSupp">Technical Support & Expertise:</a></strong> </p>
+              <p><strong><a href="deg.html">Design & Engineering Solutions:</a></strong></p>
+              <p><strong><a href="renEng">Renewable Energy Services:</a></strong> </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="form.html">Contact Us ▾</a>
+      
+            
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Full Page Image -->
+  <section class="hero">
+    <img src="https://db637ll7r1kva.cloudfront.net/app/uploads/2024/01/23132652/GettyImages-1141998016-770x513.jpg.webp" />
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 . All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
